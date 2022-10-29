@@ -11,7 +11,7 @@ int main(void) {
 	break;
     }else if (ans < choice) {
 	printf("もっと小さい。\n");
-    }else if (ans > choice) {
+    }else {
 	printf("もっと大きい。\n");
     } 
   }
