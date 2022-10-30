@@ -14,7 +14,8 @@ int main(void) {
 	printf("正解です。\n");
 	break;
     }else if (count == CHOICENUM) {
-	printf("残念、終了です。\n");
+	printf("残念、終了です。");
+	printf("正解は%dです。\n", ans);
 	break;
     }else if (ans < choice[count - 1]) {
 	printf("もっと小さい。\n");
