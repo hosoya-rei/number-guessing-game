@@ -5,8 +5,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define  CHOICENUM 5
+#define  CHOICENUM 10 
 
-void put_num_log(int c[], int count);
+void put_num_log(int c[], int count, int ans);
 
 #endif //_LOGIC_H_

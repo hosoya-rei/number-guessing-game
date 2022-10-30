@@ -6,9 +6,9 @@ int main(void) {
   int choice[CHOICENUM];
   int count = 0;
   srand((unsigned int)time(NULL));
-  ans = rand() %9 +0;
+  ans = rand() %1000 +0;
   while (1) {
-    printf("0~9の数字を入力:"); scanf("%d", &choice[count]);
+    printf("0~1000の数字を入力(あと%d回):", CHOICENUM - count); scanf("%d", &choice[count]);
     count ++;
     if (ans == choice[count - 1]) {
 	printf("正解です。\n");
@@ -23,8 +23,6 @@ int main(void) {
 	printf("もっと大きい。\n");
     } 
   }
-  put_num_log(choice, count);
+  put_num_log(choice, count, ans);
 return 0;
 }
-
-
