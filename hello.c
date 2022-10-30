@@ -1,29 +1,29 @@
-#include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
+#include "logic.h"
+
 
 int main(void) {
   int ans;
-  int choice;
+  int choice[CHOICENUM];
   int count = 0;
   srand((unsigned int)time(NULL));
   ans = rand() %9 +0;
   while (1) {
+    printf("0~9の数字を入力:"); scanf("%d", &choice[count]);
     count ++;
-    printf("0~9の数字を入力:"); scanf("%d", &choice);
-    if (ans == choice) {
-	printf("正解です。");
+    if (ans == choice[count - 1]) {
+	printf("正解です。\n");
 	break;
-    }else if (count == 5) {
+    }else if (count == CHOICENUM) {
 	printf("残念、終了です。\n");
 	break;
-    }else if (ans < choice) {
+    }else if (ans < choice[count - 1]) {
 	printf("もっと小さい。\n");
     }else {
 	printf("もっと大きい。\n");
     } 
   }
- return 0;
+  put_num_log(choice, count);
+return 0;
 }
 
 
