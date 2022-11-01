@@ -4,9 +4,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 
-#define  CHOICENUM 10 
+#define POINT 10.000
+#define point 0.001
 
-void put_num_log(int c[], int count, int ans);
+#define  DIGITS 4
+int i, k;
+
+void rnum(int x[]);
+void p_array(int x[]);
+void no_cv_rnum(int x[]);
+void p_ch_array(char x[], size_t a);
+void user_choice(char choice[], size_t len);
+
+void split_num(double you, int cho[]);
 
 #endif //_LOGIC_H_
