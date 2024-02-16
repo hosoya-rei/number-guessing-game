@@ -3,19 +3,18 @@
 
 //-----------------------main--------------------------------
 int main(void) {
-	
 	int ans[DIGITS];
- 	double you;
- 	int choice[20];
- 	int hit = 0, blow = 0;
- 	int limit = 0;
+	double you;
+	int choice[20];
+	int hit = 0, blow = 0;
+	int limit = 0;
 	int judge = 0;
 	char test[20];
 	size_t len;
 //--------------------------入力-------------------------------
 	no_cv_rnum(ans);
 
- 	while (1) {
+	while (1) {
 		printf("あと%d回\n", 10 - limit); 
 		printf("4桁の数字を入力:"); scanf("%lf", &you);
 		
