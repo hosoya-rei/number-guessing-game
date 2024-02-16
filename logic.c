@@ -1,6 +1,6 @@
 #include "logic.h"
 
-
+//コメント
 //char型の配列の中身を表示
 void p_ch_array(char x[], size_t a) {
   for (i = 0; i < a; i++) {
